@@ -51,18 +51,29 @@
       </div>
     </div>
   </section>
-
-  <!-- Ventana Acerca de nosotros -->
-  <div class="modal" *ngIf="isModalOpen">
-    <div class="modal-content">
-      <span class="close" (click)="closeModal()">&times;</span>
-      <br>
-      <h2>{{ modalData.title }}</h2>
-      <ul>
-        <li *ngFor="let feature of modalData.features">{{ feature }}</li>
-      </ul>
+  
+<br><br>
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="animated fade-in div2">
+    <div class="d-flex align-items-center">
+      <img src="/assets/img/cultivador.jpg" alt="" style="height: 200px;">
+      <div class="ml-4">
+        <h2>Div a la izquierda</h2>
+        <p>Contenido del div a la izquierda.</p>
+      </div>
     </div>
   </div>
+  <div class="animated fade-in div1">
+    <div class="d-flex align-items-center">
+      <img src="/assets/img/cerca-caja-verduras-maduras.jpg" alt="" style="height: 200px;">
+      <div class="ml-4">
+        <h2>Div a la derecha</h2>
+        <p>Contenido del div a la derecha.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Pie de Página -->
   <footer class="fixed-bottom text-center">

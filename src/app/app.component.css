@@ -101,3 +101,44 @@
 .close:hover {
     color: #3d6b57;
 }
+/* Animación de desvanecimiento para div1 */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Aplicar animación de desvanecimiento a div1 con retraso */
+.div1 {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 2s; /* Retrasar 0.5 segundos */
+  margin-top: 10%;
+  margin-left: 50%;
+  width: 50%;
+}
+
+/* Animación de desvanecimiento para div2 */
+.div2 {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  margin-top: 1%;
+  width: 50%;
+}
+
+/* Clase de animación normal sin retraso */
+.animated {
+  animation-fill-mode: both;
+}
+
+.infoPrin1{
+    background-color: #f5ffef;
+}
+
+.div2 img{
+    margin: 0px;
+}
